@@ -51,8 +51,6 @@ npm run test:cov
 - TypeScript: JavaScript typed superset
 - Jest: Testing framework
 - Docker: Containerization
-- class-validator: Data Validation
-- @nestjs/axios: HTTP Client
 
 ## Technical Considerations
 
