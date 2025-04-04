@@ -16,11 +16,7 @@ Explore API Documentation [here](https://app.swaggerhub.com/apis-docs/FelipeAmig
 
 ### Prerequisites
 
-- Docker (for containerized deployment)
-
-- Node.js 18.x
-
-- npm
+- Docker
 
 ## Docker execution
 
