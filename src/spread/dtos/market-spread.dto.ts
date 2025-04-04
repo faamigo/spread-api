@@ -2,11 +2,11 @@ import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
 
 export class MarketSpreadDto {
-        @IsString()
-        @IsNotEmpty()
-        marketId: string;
+    @IsString()
+    @IsNotEmpty()
+    marketId: string;
     
-        @IsNumber()
-        @IsNotEmpty()
-        spread: number;
+    @IsNumber()
+    @IsNotEmpty()
+    spread: number;
 }
