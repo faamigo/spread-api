@@ -1,3 +1,12 @@
-import { BaseMarketSpreadDto } from './base-market-spread.dto';
+import { IsNotEmpty, IsNumber, IsString } from 'class-validator';
 
-export class MarketSpreadDto extends BaseMarketSpreadDto {}
+
+export class MarketSpreadDto {
+        @IsString()
+        @IsNotEmpty()
+        marketId: string;
+    
+        @IsNumber()
+        @IsNotEmpty()
+        spread: number;
+}

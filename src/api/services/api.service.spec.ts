@@ -5,6 +5,11 @@ import { of, throwError } from 'rxjs';
 import { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import { Logger } from '@nestjs/common';
 
+
+const mockHttpService =  {
+  get: jest.fn(),
+}
+
 describe('ApiService', () => {
     let service: ApiService;
     let httpService: HttpService;
@@ -16,9 +21,7 @@ describe('ApiService', () => {
                 ApiService,
                 {
                     provide: HttpService,
-                    useValue: {
-                        get: jest.fn(),
-                    },
+                    useValue: mockHttpService,
                 },
             ],
         }).compile();

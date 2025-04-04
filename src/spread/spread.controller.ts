@@ -6,6 +6,7 @@ import { MarketSpreadsResponseDto } from './dtos/market-spreads-response.dto';
 import { MarketSpreadDto } from './dtos/market-spread.dto';
 import { SpreadAlertResponseDto } from './dtos/spread-alert-response.dto';
 
+
 @Controller('spreads')
 export class SpreadController {
     constructor(private readonly spreadService: SpreadService ) {}

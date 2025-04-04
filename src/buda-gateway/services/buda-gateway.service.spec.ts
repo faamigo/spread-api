@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { BudaGatewayService } from './buda-gateway.service';
 import { ApiService } from '../../api/services/api.service';
-import { InternalServerErrorException, NotFoundException } from '@nestjs/common';
+
 
 const mockApiService = {
     get: jest.fn()

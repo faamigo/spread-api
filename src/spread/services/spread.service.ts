@@ -6,6 +6,7 @@ import { CheckSpreadAlertResponseDto } from '../dtos/check-spread-alert-response
 import { MarketSpreadDto } from '../dtos/market-spread.dto';
 import { SpreadAlertResponseDto } from '../dtos/spread-alert-response.dto';
 
+
 @Injectable()
 export class SpreadService {
     private spreadAlerts = new Map<string, number>();

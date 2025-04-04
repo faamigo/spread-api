@@ -1,8 +1,9 @@
-import { Injectable, InternalServerErrorException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { ApiService } from '../../api/services/api.service';
 import { MarketTickerDto } from '../dtos/market-ticker.dto';
 import { TickersDto } from '../dtos/market-ticker.dto';
 import { BUDA_CONFIG } from '../../constants/buda.constants';
+
 
 @Injectable()
 export class BudaGatewayService {

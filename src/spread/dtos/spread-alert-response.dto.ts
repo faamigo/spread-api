@@ -1,6 +1,7 @@
 import { IsNotEmpty, IsString, ValidateNested } from 'class-validator';
-import { BaseMarketSpreadDto } from './base-market-spread.dto';
 import { Type } from 'class-transformer';
+import { MarketSpreadDto } from './market-spread.dto';
+
 
 export class SpreadAlertResponseDto {
     @IsString()
@@ -9,6 +10,6 @@ export class SpreadAlertResponseDto {
 
     @IsNotEmpty()
     @ValidateNested()
-    @Type(() => BaseMarketSpreadDto)
-    alert: BaseMarketSpreadDto;
+    @Type(() => MarketSpreadDto)
+    alert: MarketSpreadDto;
 }

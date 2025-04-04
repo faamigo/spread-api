@@ -3,6 +3,7 @@ import { InternalServerErrorException, NotFoundException } from '@nestjs/common'
 import { SpreadService } from './spread.service';
 import { BudaGatewayService } from '../../buda-gateway/services/buda-gateway.service';
 
+
 const mockTicker = {
     ticker: {
         market_id: 'BTC-CLP',
@@ -36,6 +37,10 @@ describe('SpreadService', () => {
 
     afterEach(() => {
         jest.clearAllMocks();
+    });
+
+    it('should be defined', () => {
+        expect(spreadService).toBeDefined();
     });
 
     describe('checkSpreadAlert', () => {
