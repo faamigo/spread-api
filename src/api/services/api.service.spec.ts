@@ -6,9 +6,9 @@ import { AxiosResponse, InternalAxiosRequestConfig } from 'axios';
 import { Logger } from '@nestjs/common';
 
 
-const mockHttpService =  {
+const mockHttpService = {
   get: jest.fn(),
-}
+};
 
 describe('ApiService', () => {
     let service: ApiService;
