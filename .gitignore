@@ -1,0 +1,10 @@
+# compiled output
+/dist
+/node_modules
+/build
+/coverage
+
+# OS
+.DS_Store
+
+.env
