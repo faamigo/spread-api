@@ -100,7 +100,6 @@ export class SpreadService {
             }
             throw new InternalServerErrorException(`Error checking spread alert for ${marketId}: ${error.message}`);
         }
-
     }
 
     createSpreadAlert(marketId: string, spread: number): SpreadAlertResponseDto {
